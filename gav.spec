@@ -1,7 +1,7 @@
 %define name	gav
 %define	tver	0.7.3
 %define version 0.9.0
-%define release %mkrel 2
+%define release %mkrel 3
 %define	Summary	GPL Arcade Volleyball
 
 Name:		%{name}
@@ -43,10 +43,6 @@ install -m755 -d $RPM_BUILD_ROOT%{_gamesdatadir}/%{name}/themes
 cp -r themes/* $RPM_BUILD_ROOT%{_gamesdatadir}/%{name}/themes
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{_gamesbindir}/%{name}" icon="%{name}.png" needs="x11" title="%{Summary}" longtitle="2-D Volleyball" section="Amusement/Sports" xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -57,7 +53,7 @@ Exec=%{_gamesbindir}/%{name}
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-MoreApplications-Games-Sports;Game;SportsGame;
+Categories=Game;SportsGame;
 EOF
 
 #icons
@@ -79,7 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGELOG
 %{_gamesbindir}/%{name}
 %{_gamesdatadir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_liconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
