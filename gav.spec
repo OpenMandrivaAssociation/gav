@@ -17,7 +17,6 @@ Source13: 	%{name}48.png
 URL:		http://gav.sourceforge.net/
 License:	GPL
 Group:		Games/Sports
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	SDL-devel SDL_image-devel SDL_net-devel
 
 %description
