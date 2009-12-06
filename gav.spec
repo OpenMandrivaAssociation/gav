@@ -1,7 +1,7 @@
 %define name	gav
 %define	tver	0.7.3
 %define version 0.9.0
-%define release %mkrel 6
+%define release %mkrel 7
 %define	Summary	GPL Arcade Volleyball
 
 Name:		%{name}
@@ -14,8 +14,9 @@ Source1:	%{name}-themes-%{tver}.tar.bz2
 Source11:	%{name}16.png
 Source12: 	%{name}32.png
 Source13: 	%{name}48.png
+Patch0:		gav-0.9.0-mdv-fix-gcc-4.3.patch
 URL:		http://gav.sourceforge.net/
-License:	GPL
+License:	GPLv2+
 Group:		Games/Sports
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	SDL-devel SDL_image-devel SDL_net-devel
@@ -30,6 +31,7 @@ This package contains all available themes as well.
 
 %prep
 %setup -q -a1
+%patch0 -p1 -b .gcc43
 
 %build
 %make depend CXXFLAGS="$RPM_OPT_FLAGS `sdl-config --cflags` -I`pwd`/menu  -I`pwd`/automa  -I`pwd`/net -I`pwd`"
