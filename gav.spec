@@ -1,7 +1,7 @@
 %define name	gav
 %define	tver	0.7.3
 %define version 0.9.0
-%define release %mkrel 7
+%define release %mkrel 8
 %define	Summary	GPL Arcade Volleyball
 
 Name:		%{name}
