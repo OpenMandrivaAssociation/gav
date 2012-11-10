@@ -1,0 +1,11 @@
+diff -p -up gav-0.9.0/aarg.h.gcc43 gav-0.9.0/aarg.h
+--- gav-0.9.0/aarg.h.gcc43	2009-12-07 00:06:24.000000000 +0100
++++ gav-0.9.0/aarg.h	2009-12-07 00:07:29.000000000 +0100
+@@ -6,6 +6,7 @@
+ #include <stdio.h>
+ #include <unistd.h>
+ #include <map>
++#include <cstring>
+ #include <string>
+ #include <sstream>
+ 
