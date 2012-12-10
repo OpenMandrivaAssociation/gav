@@ -88,3 +88,60 @@ rm -rf $RPM_BUILD_ROOT
 
 
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.9.0-8mdv2011.0
++ Revision: 610819
+- rebuild
+
+* Mon Dec 07 2009 J√©r√¥me Brenier <incubusss@mandriva.org> 0.9.0-7mdv2010.1
++ Revision: 474277
+- fix build with gcc >= 4.3
+- fix license tag
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Sep 09 2007 Emmanuel Andry <eandry@mandriva.org> 0.9.0-3mdv2008.0
++ Revision: 83532
+- drop old menu
+
+
+* Wed Sep 13 2006 Nicolas L√©cureuil <neoclust@mandriva.org>
++ 2006-09-12 09:05:47 (61027)
+- migrate to XDG
+
+* Fri Aug 04 2006 Nicolas L√©cureuil <neoclust@mandriva.org>
++ 2006-08-03 03:44:52 (43098)
+- import gav-0.9.0-1mdv2007.0
+
+* Sun May 28 2006 Emmanuel Andry <eandry@mandriva.org> 0.9.0-1mdk
+- 0.9.0
+
+* Tue Jul 05 2005 Nicolas LÈcureuil <neoclust@mandriva.org> 0.8.0-3mdk
+- Rebuild
+- %%{1}mdv2007.0
+- Make rpmbuildupdate friendly
+
+* Thu Jun 17 2004 Per ÿyvind Karlsen <peroyvind@linux-mandrake.com> 0.8.0-2mdk
+- rebuild
+
+* Thu Apr 15 2004 Per ÿyvind Karlsen <peroyvind@linux-mandrake.com> 0.8.0-1mdk
+- 0.8.0
+
+* Thu Feb 05 2004 Per ÿyvind Karlsen <peroyvind@linux-mandrake.com> 0.7.3-1mdk
+- 0.7.3
+- correct name in menu item
+- cleanups
+- move binary to /usr/games
+- compile with $RPM_OPT_FLAGS
+
