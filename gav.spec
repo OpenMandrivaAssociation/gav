@@ -3,7 +3,7 @@
 Summary:	Arcade volleyball
 Name:		gav
 Version:	0.9.0
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		Games/Sports
 Url:		http://gav.sourceforge.net/
