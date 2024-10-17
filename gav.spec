@@ -6,7 +6,7 @@ Version:	0.9.0
 Release:	10
 License:	GPLv2+
 Group:		Games/Sports
-Url:		http://gav.sourceforge.net/
+Url:		https://gav.sourceforge.net/
 Source0:	http://puzzle.dl.sourceforge.net/sourceforge/gav/%{name}-%{version}.tar.bz2
 Source1:	%{name}-themes-%{tver}.tar.bz2
 Source11:	%{name}16.png
